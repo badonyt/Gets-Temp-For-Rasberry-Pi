@@ -1,8 +1,8 @@
 const http = require('http');
 
 const options = {
-    host : '127.0.0.1',
-    port : 3000,
+  host: '127.0.0.1',
+  port: 3000,
   path: '/',
   method: 'GET'
 };
@@ -11,7 +11,7 @@ const req = http.request(options, (res) => {
   console.log(`statusCode: ${res.statusCode}`);
 
   res.on('data', (d) => {
-    process.stdout.write(d);
+    process.stdout.write("Temperature of rasberry pi is " + d);
   });
 });
 
