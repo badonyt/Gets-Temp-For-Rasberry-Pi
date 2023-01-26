@@ -5,3 +5,4 @@ node_modules/
 *.lock
 /client/dist/
 !tsconfig.json
+/client/target
